@@ -6,13 +6,13 @@ authors = [
 ]
 description = "一个全面的Python并发编程增强库，为标准线程、进程和Qt线程提供了更高级的抽象和异常处理机制"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 license = { text = "MIT" }
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: System :: Networking",
     "Topic :: System :: Distributed Computing"
@@ -23,7 +23,10 @@ dependencies = [
     "colorama>=0.4.6",
     "loguru>=0.7.3",
     "win32_setctime>=1.2.0",
-    "xtlog>=0.1.9","PyQt6>=6.9.1", "PyQt6-Qt6>=6.9.2", "PyQt6_sip>=13.10.2"
+    "xtlog>=0.1.9",
+    "PyQt6>=6.9.1",
+    "PyQt6-Qt6>=6.9.2",
+    "PyQt6_sip>=13.10.2"
 ]
 [project.urls]
 Homepage = "https://github.com/sandorn/xtthread"
@@ -37,7 +40,7 @@ build-backend = "setuptools.build_meta"
 
 #=======================================================
 [tool.ruff]
-target-version = "py313"
+target-version = "py314"
 cache-dir = "D:/TMP/ruff_cache"
 preview = true
 line-length = 200
@@ -109,7 +112,7 @@ skip-magic-trailing-comma = false  # 改为 true 避免与长行冲突
 # 类型检查器: basedpyright
 
 [tool.basedpyright]
-pythonVersion = "3.13"
+pythonVersion = "3.14"
 typeCheckingMode = "basic"
 reportMissingImports = "error"
 reportUnusedImport = "none"
@@ -131,7 +134,7 @@ exclude = [
 
 # 可选类型检查器：mypy 
 [tool.mypy]
-python_version = "3.13"
+python_version = "3.14"
 cache_dir = "D:/TMP/mypy_cache/"
 show_error_codes = true
 check_untyped_defs = true
